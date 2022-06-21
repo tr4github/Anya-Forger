@@ -1,5 +1,5 @@
 {
-  "name": "ichigo-kurosaki",
+  "name": "Anya-forger",
   "version": "1.0.0",
   "description": "Nganu",
   "main": "connect/index.js",
@@ -20,7 +20,7 @@
     "botmd",
     "bot-md"
   ],
-  "author": "Fandyyy",
+  "author": "tr4github",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "^4.1.0",
@@ -71,10 +71,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FBOTZ-YT/Ichigo-Kurosaki.git"
+    "url": "git+https://github.com/tr4github/Anya-Forger.git"
   },
   "bugs": {
-    "url": "https://github.com/FBOTZ-YT/Ichigo-Kurosaki/issues"
+    "url": "https://github.com/tr4github/Anya-Forger/issues"
   },
-  "homepage": "https://github.com/FBOTZ-YT/Ichigo-Kurosaki#readme"
+  "homepage": "https://github.com/tr4github/Anya-Forger#readme"
 }
