@@ -116,11 +116,11 @@ ichi.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 		if (m.isGroup && m.mtype == 'viewOnceMessage') {
 			let teks = `「 *Anti ViewOnce Message* 」
     
-    🤠 *Name* : ${pushname}
-    👾 *User* : @${m.sender.split("@")[0]}
-    ⏰ *Clock* : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')} WIB
+     *Name* : ${pushname}
+     *User* : @${m.sender.split("@")[0]}
+     *Clock* : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')} WIB
     
-    💫 *MessageType* : ${m.mtype}`
+     *MessageType* : ${m.mtype}`
      reply(teks)
 			await sleep(500)
 			m.copyNForward(m.chat, true, {
@@ -148,85 +148,83 @@ switch(command) {
 
 case 'menu': case 'help': case '?': {
   let menu = `
-╔════════
-╠══ *OWNER MENU*
-╠ ${prefix}bc
-╠ ${prefix}bcgc
-╠ ${prefix}join
-╠ ${prefix}leave
-╠ ${prefix}block
-╠ ${prefix}unblock
-╠ ${prefix}setppbot
-╠ ${prefix}self
-╠ ${prefix}public
-╠ ${prefix}eval
-╚════════
+
+  *OWNER MENU*
+ ${prefix}bc
+ ${prefix}bcgc
+ ${prefix}join
+ ${prefix}leave
+ ${prefix}block
+ ${prefix}unblock
+ ${prefix}setppbot
+ ${prefix}self
+ ${prefix}public
+ ${prefix}eval
+   
   
-╔════════
-╠══ *GROUP MENU*
-╠ ${prefix}antilink
-╠ ${prefix}linkgroup
-╠ ${prefix}revoke
-╠ ${prefix}kick
-╠ ${prefix}add
-╠ ${prefix}promote
-╠ ${prefix}demote
-╠ ${prefix}setname
-╠ ${prefix}setdesk
-╠ ${prefix}setppgrup
-╠ ${prefix}tagall
-╠ ${prefix}hidetag
-╠ ${prefix}ephemeral
-╚════════
+
+  *GROUP MENU*
+ ${prefix}antilink
+ ${prefix}linkgroup
+ ${prefix}revoke
+ ${prefix}kick
+ ${prefix}add
+ ${prefix}promote
+ ${prefix}demote
+ ${prefix}setname
+ ${prefix}setdesk
+ ${prefix}setppgrup
+ ${prefix}tagall
+ ${prefix}hidetag
+ ${prefix}ephemeral
+
   
-╔════════
-╠══ *MAKER MENU*
-╠ ${prefix}sticker
-╠ ${prefix}toimg
-╠ ${prefix}tovideo
-╠ ${prefix}toaudio
-╠ ${prefix}tomp3
-╠ ${prefix}tovn
-╠ ${prefix}togif
-╠ ${prefix}tourl
-╠ ${prefix}removebg
-╠ ${prefix}estetik
-╠ ${prefix}ktpmaker
-╚════════
+ *MAKER MENU*
+ ${prefix}sticker
+ ${prefix}toimg
+ ${prefix}tovideo
+ ${prefix}toaudio
+ ${prefix}tomp3
+ ${prefix}tovn
+ ${prefix}togif
+ ${prefix}tourl
+ ${prefix}removebg
+ ${prefix}estetik
+ ${prefix}ktpmaker
 
-╔════════
-╠══ *RANDOM MENU*
-╠ ${prefix}pinterest
-╠ ${prefix}wallpaper
-╠ ${prefix}quotesanime
-╠ ${prefix}wikimedia
-╚════════
 
-╔════════
-╠══ *OTHER MENU*
-╠ ${prefix}delete
-╠ ${prefix}donasi
-╠ ${prefix}sewa
-╠ ${prefix}sc
-╠ ${prefix}owner
-╠ ${prefix}ping
-╠ ${prefix}menu / ${prefix}help / ${prefix}?
-╚════════
 
-╔════════
-╠══ *DOWNLOAD MENU*
-╠ ${prefix}play
-╠ ${prefix}yts
-╠ ${prefix}ytmp3
-╠ ${prefix}ytmp4
-╚════════
+ *RANDOM MENU*
+ ${prefix}pinterest[teks]
+ ${prefix}wallpaper[teks]
+ ${prefix}quotesanime[teks]
+ ${prefix}wikimedia[teks]
+
+
+
+ *OTHER MENU*
+ ${prefix}delete
+ ${prefix}donasi
+ ${prefix}sewa
+ ${prefix}sc
+ ${prefix}owner
+ ${prefix}ping
+ ${prefix}menu / ${prefix}help / ${prefix}?
+
+
+ *DOWNLOAD MENU*
+ ${refix}play
+ ${prefix}yts
+ ${prefix}ytmp3
+ ${refix}ytmp4
+
   `
   let but = [
-  {urlButton: {displayText: 'Source Code ♨️',url: 'https://github.com/NzrlAfndi/Ichigo-Kurosaki'}}, 
-  {urlButton: {displayText: 'Website 🔗',url: 'https://linktr.ee/nzrlafndi'}}, 
-  {"quickReplyButton": {"displayText": "Donasi 🗂️","id": `donasi`},},
-  {"quickReplyButton": {"displayText": "Owner 👦","id": "owner"},},
-  {"quickReplyButton": {"displayText": "Status Bot ⌚","id": `ping`}}
+  {urlButton: {displayText: 'Source Code',url: 'https://github.com/tr4github/Anya-Forger'}}, 
+  {urlButton: {displayText: 'Website ',url: 'https://linktr.ee/nzrlafndi'}}, 
+  {"quickReplyButton": {"displayText": "Donasi ","id": `donasi`},},
+  {"quickReplyButton": {"displayText": "Owner ","id": "owner"},},
+  {"quickReplyButton": {"displayText": "speed","id": `ping`}}
   ]
   ichi.sendButtonImg(m.chat, menu, global.ownerName, global.thumb, but)
   }
@@ -235,15 +233,10 @@ case 'donasi': case 'sewa': case 'sewabot': {
   let donasi = `Scan QR Above To Donate
 
 Rental Bot Prices :
-💰 10k/week
-💰 25k/month
-💰 100k/year`
-  let but = [{"quickReplyButton": {"displayText": "Owner 👦","id": "owner"}}]
+ 10k/week
+ 25k/month'
+  let but = [{"quickReplyButton": {"displayText": "Owner","id": "owner"}}]
   ichi.sendButtonImg(m.chat, donasi, global.ownerName, global.donasi, but)
-  }
-  break
-case 'sc': case 'sourcecode': case 'script': {
-  m.reply('*Script Berasal Dari :* https://github.com/nzrlafndi/ichigo-kurosaki\n\nJangan Lupa Bintang nya!')
   }
   break
 case 'owner': {
@@ -281,9 +274,9 @@ case 'ping': case 'botstatus': case 'statusbot': case 'speed': case 'tes': {
   neww = performance.now()
   oldd = performance.now()
   respon = `
-🏎️ Kecepatan Respon ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
+ Kecepatan Respon ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
 
-💻 Info Server
+ Info Server
 RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 
 _NodeJS Memory Usaage_
@@ -433,13 +426,12 @@ case 'revoke': {
   await ichi.groupRevokeInvite(from)
   m.reply(mess.done)
   }
-  break
 case 'kick': {
   if (!m.isGroup) return m.reply(mess.group)
   if (!isBotAdmins) return m.reply(mess.botAdmin)
   if (!isAdmins) return m.reply(mess.admin)
   if (!m.quoted && !text) return m.reply('Yang mau di kick siapa??')
-  if (args[0].startsWith('08')) return m.reply('Gunakan kode negara 62 Gan')
+  if (args[0].startsWith('08')) return m.reply('Gunakan kode negara 62 tod')
   let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
   await ichi.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => m.reply(mess.done)).catch((err) => m.reply(jsonformat(err)))
   }
@@ -449,7 +441,7 @@ case 'add': {
   if (!isBotAdmins) return m.reply(mess.botAdmin)
   if (!isAdmins) return m.reply(mess.admin)
   if (!m.quoted && !text) return m.reply('Yang mau di add siapa??')
-  if (args[0].startsWith('08')) return m.reply('Gunakan kode negara 62 Gan')
+  if (args[0].startsWith('08')) return m.reply('Gunakan kode negara 62 tod')
   let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
   await ichi.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => m.reply(mess.done)).catch((err) => m.reply(jsonformat(err)))
   }
@@ -459,7 +451,7 @@ case 'promote': {
   if (!isBotAdmins) return m.reply(mess.botAdmin)
   if (!isAdmins) return m.reply(mess.admin)
   if (!m.quoted && !text) return m.reply('Yang mau di promote siapa??')
-  if (args[0].startsWith('08')) return m.reply('Gunakan kode negara 62 Gan')
+  if (args[0].startsWith('08')) return m.reply('Gunakan kode negara 62 tod')
   let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
   await ichi.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => m.reply(mess.done)).catch((err) => m.reply(jsonformat(err)))
   }
@@ -469,7 +461,7 @@ case 'demote': {
   if (!isBotAdmins) return m.reply(mess.botAdmin)
   if (!isAdmins) return m.reply(mess.admin)
   if (!m.quoted && !text) return m.reply('Yang mau di demote siapa??')
-  if (args[0].startsWith('08')) return m.reply('Gunakan kode negara 62 Gan')
+  if (args[0].startsWith('08')) return m.reply('Gunakan kode negara 62 tod')
   let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
   await ichi.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => m.reply(mess.done)).catch((err) => m.reply(jsonformat(err)))
   }
@@ -505,9 +497,9 @@ case 'tagall': {
   if (!m.isGroup) return m.reply(mess.group)
   if (!isBotAdmins) return m.reply(mess.botAdmin)
   if (!isAdmins) return m.reply(mess.admin)
-let teks = `*👥 Tag All By Admin*
+let teks = `*Tag All By Admin*
  
-🗞️ *Pesan : ${q ? q : 'kosong'}*\n\n`
+ *Pesan : ${q ? q : 'kosong'}*\n\n`
   for (let mem of participants) {
   teks += `>> @${mem.id.split('@')[0]}\n`
   }
@@ -840,9 +832,9 @@ case 'wikimedia': {
   let buttons = [{buttonId: `wikimedia ${text}`, buttonText: {displayText: 'Next Result'}, type: 1}]
   let buttonMessage = {
   image: { url: result.image },
-  caption: `📄 Title : ${result.title}
-📬 Source : ${result.source}
-🔗 Media Url : ${result.image}`,
+  caption: ` Title : ${result.title}
+  Source : ${}result
+  media Url : ${result.image}`,
   footer: global.ownerName,
   buttons: buttons,
   headerType: 4
@@ -863,11 +855,11 @@ case 'ytmp4': case 'ytvideo': case 'ytv': {
   if (media.filesize >= 100000) return m.reply('File Melebihi Batas Silahkan Download Sendiri : '+media.dl_link)
   var caption = `---- Youtube Downloader -----
   
-📄 Judul : ${media.title}
-🎚️ Size : ${media.filesizeF}
-🔗 Url : ${isUrl(text)}
-📥 Format : MP4
-📮 Resolusi : ${args[1] || '360p'}`
+ Judul : ${media.title}
+ Size : ${media.filesizeF}
+ Url : ${isUrl(text)}
+ Format : MP4
+ Resolusi : ${args[1] || '360p'}`
   ichi.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: caption }, { quoted: m })
   }
   break
@@ -882,11 +874,11 @@ case 'ytmp3': case 'ytaudio': case 'yta': {
   if (media.filesize >= 100000) return m.reply('File Melebihi Batas Silahkan Download Sendiri : '+media.dl_link)
   var caption = `*------ Youtube Downloader -----*
 
-📄 Title : ${media.title}
-🎚️ Size : ${media.filesizeF}
-🔗 Url : ${isUrl(text)}
-📥 Format : MP3
-📮 Resolusi : ${args[1] || '128kbps'}`
+ Title : ${media.title}
+ Size : ${media.filesizeF}
+ Url : ${isUrl(text)}
+ Format : MP3
+ Resolusi : ${args[1] || '128kbps'}`
   ichi.sendImage(m.chat, media.thumb, caption, m)
   ichi.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
   }
@@ -900,34 +892,34 @@ case 'yts': case 'ytsearch': {
   let no = 1
   for (let i of search.all) {
   teks += `🔢 No : ${no++}
-🎞️ Type : ${i.type}
-📀 Video ID : ${i.videoId}
-📄 Title : ${i.title}
-👁️ Views : ${i.views}
-👁️ Duration : ${i.timestamp}
-📤 Upload : ${i.ago}
-👨‍🎤 Author : ${i.author.name}
-🔗 Url : ${i.url}\n\n─────────────────\n\n`
+ Type : ${i.type}
+ Video ID : ${i.videoId}
+ Title : ${i.title}
+ Views : ${i.views}
+ Duration : ${i.timestamp}
+ Upload : ${i.ago}
+ Author : ${i.author.name}
+ Url : ${i.url}\n\n─────────────────\n\n`
   }
   ichi.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
   }
   break
 case 'play':
-  if (!text) throw `Example : ${prefix + command} story wa anime`
+  if (!text) throw `Example : ${prefix + command} nekopoi terbaru`
   let yts = require("yt-search")
   let search = await yts(text)
   let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
-  let buttons = [{buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: 'Audio 🎵'}, type: 1}, {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: 'Video 🎦'}, type: 1}]
+  let buttons = [{buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: 'Audio '}, type: 1}, {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: 'Video 🎦'}, type: 1}]
   let buttonMessage = {
   image: { url: anu.thumbnail },
   caption: `*----- DATA DITEMUKAN -----*
   
-*📄 Title :* ${anu.title}
-*⌚ Duration :* ${anu.timestamp}
-*👁️ Viewers :* ${anu.views}
-*📤 Upload :* ${anu.ago}
-*👨‍🎤 Channel :* ${anu.author.url}
-*🔗 Url :* ${anu.url}`,
+* Title :* ${anu.title}
+* Duration :* ${anu.timestamp}
+* Viewers :* ${anu.views}
+* Upload :* ${anu.ago}
+* Channel :* ${anu.author.url}
+* Url :* ${anu.url}`,
   footer: global.ownerName,
   buttons: buttons,
   headerType: 4
