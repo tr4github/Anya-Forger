@@ -25,12 +25,12 @@ global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.
 //Starting In Console
 async function startIchigo(){
   
-cfonts.say('ICHIGO',{
+cfonts.say('Anya',{
 font: 'block',
 gradient: ['red','magenta'],
 align: 'center'
 })
-cfonts.say('Whatsapp Bot By Fandyyy',{
+cfonts.say('tr4github',{
 font: 'console',
 gradient: ['red','magenta'],
 align: 'center'
@@ -76,10 +76,10 @@ ppuser = await ichi.profilePictureUrl(num, 'image')
 ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
 if (anu.action == 'add') {
-tekswell = `Welcome @${num.split('@')[0]} To ${metadata.subject} 👋`
+tekswell = `Welcome @${num.split('@')[0]} To ${metadata.subject} `
 ichi.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: tekswell })
 } else if (anu.action == 'remove') {
-teksbye = `Sayonaraa @${num.split("@")[0]} 👋`
+teksbye = `Sayonaraa @${num.split("@")[0]} `
 ichi.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: teksbye })
 }
 }
