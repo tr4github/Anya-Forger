@@ -9,26 +9,26 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //Ubah Disini
-global.ownerNumber = ['6285609233482','6287877173955','0']
-global.ownerName = 'Fandyyy X All Creator'
+global.ownerNumber = ['6289654836567','0']
+global.ownerName = 'tr4github'
 global.packname = 'Ichigo Kurosaki'
-global.author = 'Whatsapp Bot 2022'
+global.author = 'Anya'
 global.prefa = ['','!','.','#','!'] //Ilangin Prefix Yang '' Kalau Gamau No Prefix
 global.sessionName = 'sesi'
 
 //Message Nya Ubah Disini
 global.mess = {
-admin: 'You Are Not Admin!',
-botAdmin: 'Bot Not Admin!',
-botOwner: 'You Are Not My Owner!',
-group: 'Only Group!',
-private: 'Only Private Chat',
+admin: 'luh bukn Admin!',
+botAdmin: 'jadiin admin dulu!',
+botOwner: 'lu bukan owner!',
+group: 'hanya Group!',
+private: 'hanya Private Chat',
 wait: 'Loading...',
 done: 'Done!'
 }
 
 //Sesuaikan
-global.thumb = fs.readFileSync('./media/ichi.jpeg')
+global.thumb = fs.readFileSync('./media/forger.jpeg')
 global.donasi = fs.readFileSync('./media/donasi.jpg')
 global.thumbnail = fs.readFileSync('./media/ichi.mp4')
 
