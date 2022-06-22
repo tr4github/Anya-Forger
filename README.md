@@ -1,26 +1,16 @@
-<p align="center">
-<img src="https://telegra.ph/file/5bd80998f8262a0a5e64f.jpg" alt="Ichigo Kurosaki" width="500"/>
-
+                                         ANYA FORGER [ada Juga Yor Forger-MD cek tr4github]
 Base Bot WhatsApp Multi Device With [`Baileys Multi Device`](https://github.com/adiwajshing)
 
 ## Note
 Base Ini Free Untuk Semua, Tidak Untuk Diperjualbelikan Kecuali Lu Udah Tambahin Fitur Langka Di Script Ini Baru Boleh Jual
 
 ## Thanks To
-* [`Adiwajshing`](https://github.com/adiwajshing)
-* [`Nurutomo`](https://github.com/Nurutomo)
 * [`Fandyyy`](https://github.com/FBOTZ-YT)
-* [`FERDIZ-afk`](https://github.com/FERDIZ-afk)
 
-## Connect With Me
-* [`Group WhatsApp`](https://chat.whatsapp.com/CSqakw6x2wRIOWTPL5a6a9)
-* [`Whatsapp`](https://wa.me/6285609233482?text=Assalamualaikum)
-* [`Instagram`](https://instagram.com/_nzrlafndi)
-* [`More...`](https://linktr.ee/NzrlAfndi)
+
 
 ## Donate Me
-* [`Saweria`](https://saweria.co/Fandyy)
-* [`Gopay`](https://telegra.ph/file/4abd43eeab0c17edebff2.jpg)
+* [`Saweria`](https://saweria.co/tr4studio)
 
 ## License
 License: [MIT](https://en.wikipedia.org/wiki/MIT_License)
@@ -33,9 +23,10 @@ License: [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
 
 ```bash
-git clone https://github.com/NzrlAfndi/Ichigo-Kurosaki
-cd Ichigo-Kurosaki
+git clone https://github.com/tr4github/Anya-Forger
+cd Anya-Forger
 yarn
+npm install
 npm start
 ```
 
@@ -55,8 +46,8 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 pkg install yarn
-git clone https://github.com/NzrlAfndi/Ichigo-Kurosaki
-cd Ichigo-Kurosaki
+git clone https://github.com/tr4github/Anya-Forger
+cd Anya-Forger
 yarn
 npm start
 ```
@@ -72,7 +63,5 @@ $ npm run dev
 ## ❗ Warning
 WhatsApp bot is still in the development stage, so there are a few bugs
 WhatsApp Connection (BETA, not working perfectly)
-
-Editing Number Owner And More On [`settings.js`](https://github.com/NzrlAfndi/Ichigo-Kurosaki/blob/master/settings.js)
 
 
