@@ -11,7 +11,7 @@ const chalk = require('chalk')
 //Ubah Disini
 global.ownerNumber = ['6289654836567','0']
 global.ownerName = 'tr4github'
-global.packname = 'Ichigo Kurosaki'
+global.packname = 'Anya Forger'
 global.author = 'Anya'
 global.prefa = ['','!','.','#','!'] //Ilangin Prefix Yang '' Kalau Gamau No Prefix
 global.sessionName = 'sesi'
