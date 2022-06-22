@@ -1,4 +1,4 @@
-                                         ANYA FORGER [ada Juga Yor Forger-MD cek tr4github]
+                                        ANYA FORGER [ada Juga Yor Forger-MD cek tr4github]
 Base Bot WhatsApp Multi Device With [`Baileys Multi Device`](https://github.com/adiwajshing)
 
 ## Note
